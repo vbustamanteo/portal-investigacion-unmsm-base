@@ -1,8 +1,3 @@
-/**
- * La Step Definition que Cucumber interpreta. 
- * Mapea el comportamiento de las pruebas hacia el controlador 
- * usando Cucumber Expressions.
- */
 
 const { Given, When, Then } = require('@cucumber/cucumber');
 const assert = require('assert');
