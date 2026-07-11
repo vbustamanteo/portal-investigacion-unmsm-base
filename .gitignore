@@ -1,0 +1,39 @@
+# Dependencias
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Variables de entorno y secretos
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Reportes y logs de Cucumber y pruebas
+report/
+reports/
+cucumber-report.html
+cucumber-report.json
+cucumber-json/
+test-results/
+logs/
+*.log
+
+# Entornos de desarrollo y carpetas del sistema
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Builds (si compilas tu código a TypeScript o Babel)
+dist/
+build/
+out/
