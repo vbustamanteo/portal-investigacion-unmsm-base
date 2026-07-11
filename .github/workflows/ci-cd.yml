@@ -5,3 +5,22 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+ jobs:
+  build_and_test:
+    name: 🧪 CI - Verificación Arquitectónica y BDD
+    runs-on: ubuntu-latest
+    steps:
+      - name: 1. Descargar Código de la Rama Activa
+        uses: actions/checkout@v4
+
+      - name: 2. Configurar Runtime de Node.js (v20)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+          cache: 'npm'
+
+      - name: 3. Instalación Inmutable de Dependencias
+        run: npm ci
+
+      - name: 4. Ejecución de Suite de Comportamiento (Cucumber + Mocks)
+        run: npm run test:cucumber
