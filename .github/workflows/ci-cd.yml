@@ -1,0 +1,7 @@
+name: Pipeline Avanzado de CI/CD - Portal UNMSM
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
